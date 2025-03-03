@@ -110,12 +110,16 @@
         <p>📧 megerdemledmasszazs1@gmail.com</p>
         <p>📞 +36 20 336 1665</p>
     </div>
-</div>
-        <h2>Zene</h2>
-        <audio controls>
-            <source src="music.mp3.1.mp3" type="audio/mpeg">
-            A böngésződ nem támogatja a lejátszást.
+            
+<h2>Zene</h2>
+        <audio id="background-music" loop>
+            <source src="music.mp3.2.mp3" type="audio/mpeg">
         </audio>
+        <script>
+            document.addEventListener("click", function() {
+                document.getElementById("background-music").play();
+            });
+        </script>
     </div>
 </body>
 </html>
